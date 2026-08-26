@@ -1,0 +1,55 @@
+[project]
+name = "chess-vision-ai"
+version = "2.3.0"
+description = "Screenshot-driven multi-engine chess analyzer (Stockfish 18 + Lc0/Maia + Syzygy)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+dependencies = [
+    "opencv-python>=4.9",
+    "numpy>=1.26",
+    "Pillow>=10.0",
+    "python-chess>=1.10",
+    "mss>=9.0",
+]
+
+[project.optional-dependencies]
+vision-llm = ["openai>=1.40"]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+
+[project.scripts]
+chess-vision-ai = "chess_vision_ai.ui.analyzer_app:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+# Keep the signal high: correctness (E/F) and import hygiene (I). Skip
+# opinionated style-only rulesets (bandit/blind-except/pyupgrade/refurb/
+# unused-argument) — this codebase intentionally uses broad `except Exception`
+# around third-party engine/UI calls that must never crash the app, and several
+# callback methods share a uniform signature across a dispatch table even when
+# a given implementation doesn't need every parameter.
+select = ["E", "F", "I"]
+ignore = ["E501"]  # line length is handled by `line-length`, not worth failing CI over
+
+[tool.ruff.lint.per-file-ignores]
+# Entry-point scripts intentionally check for missing dependencies with a
+# friendly `pip install ...` message *before* importing anything that needs
+# them, so the real imports can't be at the very top of the file.
+"main.py" = ["E402"]
+"Identifying_chess_pieces.py" = ["E402"]
+# Procedurally-drawn synthetic piece icons — terse `a; b` OpenCV call pairs
+# ported as-is from the original single-file version; not worth reformatting.
+"chess_vision_ai/templates.py" = ["E702"]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["chess_vision_ai*"]

@@ -31,16 +31,43 @@ No manual FEN entry. No copy-pasting. Just click, capture, and analyze.
 ## 🗂️ Project Structure
 
 ```
-chess-analyzer/
+chess-vision-ai/
 │
-├── 📄 Identifying_chess_pieces.py   ← Step 1: Train the piece detector
-├── 📄 main.py                       ← Step 2: Run the full analyzer
+├── 📄 Identifying_chess_pieces.py   ← Step 1: Train the piece detector (entry point)
+├── 📄 main.py                       ← Step 2: Run the full analyzer (entry point)
+│
+├── 📁 chess_vision_ai/               ← All the real logic, as focused modules
+│   ├── config.py                    ← paths, URLs, tuning constants, theme colors
+│   ├── models.py                    ← MoveInfo / AnalysisResult / TacticInfo dataclasses
+│   ├── fen_utils.py                 ← board-map → FEN, castling inference (pure, unit-tested)
+│   ├── phase.py                     ← opening/middlegame/endgame/tablebase detection
+│   ├── tactics.py                   ← fork/pin/skewer/discovered-attack detection (pure, unit-tested)
+│   ├── logging_setup.py             ← standard `logging` config + UI log-tab bridge
+│   ├── download.py                  ← DownloadManager (Stockfish/Lc0/Maia/Syzygy)
+│   ├── syzygy.py                    ← SyzygyManager (tablebase directory inspection)
+│   ├── engine_process.py            ← SingleEngine UCI wrapper + engine auto-discovery
+│   ├── engine_stack.py              ← MultiEngineStack orchestration + FEN analysis cache
+│   ├── templates.py                 ← synthetic piece-template generation/loading
+│   ├── vision_detection.py          ← BoardDetector (OpenCV template matching + confidence)
+│   ├── vision_llm.py                ← optional Vision-LLM fallback detector (off by default)
+│   ├── capture.py                   ← screen-capture helpers
+│   └── ui/
+│       ├── analyzer_app.py          ← ChessAnalyzerApp (main window)
+│       ├── trainer_app.py           ← TrainerApp (template calibration wizard)
+│       └── download_dialog.py       ← engine-download progress dialog
+│
+├── 📁 tests/                        ← pytest unit tests (fen_utils, phase, tactics)
+├── 📁 .github/workflows/ci.yml      ← GitHub Actions: lint + unit tests on every push
 │
 ├── 📁 piece_templates/              ← Auto-created after training
 ├── 📁 engines/                      ← Auto-created, holds Stockfish 18
 ├── 📁 lc0/                          ← Auto-created, holds Lc0 + Maia
 └── 📁 syzygy/                       ← Auto-created, holds tablebases
 ```
+
+> The two root-level `.py` files are thin, dependency-checking entry points kept for
+> backward compatibility with the commands below — all real logic lives in the
+> `chess_vision_ai` package so it can be tested, profiled and extended in isolation.
 
 ---
 
@@ -132,6 +159,17 @@ Step 12 → Click on the Black Pawn → Done! ✅
 - 🎯 **Moves** — Top 3 best moves with scores, UCI notation, and continuation lines
 - 💡 **Tactics** — Detected tactical motifs: forks, pins, skewers, discovered attacks, promotions, material gain
 - 📋 **Log** — Full engine log for debugging
+
+**Performance:** identical positions (same FEN + depth) are served instantly from an
+in-memory analysis cache instead of re-running the engine — useful when re-analyzing
+after a false capture or clicking "Analyze" twice.
+
+**🤖 AI vision fallback (optional):** if the local OpenCV template matcher isn't
+confident about a capture (e.g. an untrained board theme), you can enable the
+"AI vision fallback" checkbox to have a Vision-LLM (via the `openai` package) read
+the board directly from the screenshot. It only runs when confidence is low and the
+checkbox is enabled — the default, zero-cost template matcher is always tried first.
+Requires `pip install openai` and an `OPENAI_API_KEY` environment variable.
 
 ---
 
@@ -347,10 +385,25 @@ sudo pacman -S tk
 ## 📋 File Overview
 
 ### `Identifying_chess_pieces.py`
-A guided wizard that captures your chessboard's piece images and saves them as templates. These templates are used by the AI detector in `main.py` to recognize pieces. Run this once per board theme/style.
+A guided wizard that captures your chessboard's piece images and saves them as templates. These templates are used by the AI detector in `main.py` to recognize pieces. Run this once per board theme/style. (Implementation: `chess_vision_ai/ui/trainer_app.py`.)
 
 ### `main.py`
-The main application. Captures the board from your screen, detects pieces using the saved templates, generates a FEN string, feeds it to the multi-engine stack (Stockfish 18 + Lc0/Maia + Syzygy), and displays top moves with full tactical commentary.
+The main application. Captures the board from your screen, detects pieces using the saved templates (with an optional Vision-LLM fallback), generates a FEN string, feeds it to the multi-engine stack (Stockfish 18 + Lc0/Maia + Syzygy, with result caching), and displays top moves with full tactical commentary. (Implementation: `chess_vision_ai/ui/analyzer_app.py` and the rest of the `chess_vision_ai` package.)
+
+---
+
+## 🧪 Running the Tests
+
+```bash
+pip install -r requirements-dev.txt
+pytest tests/ -v
+ruff check .
+```
+
+The test suite covers the pure-logic modules (`fen_utils`, `phase`, `tactics`) with
+hand-built chess positions for every tactical motif — no engine, screen, or GUI
+needed, so it runs in well under a second and is safe to run in CI (see
+`.github/workflows/ci.yml`).
 
 ---
 
@@ -363,6 +416,13 @@ Pull requests are welcome! Some ideas for contributions:
 - 📱 Support for mobile screenshots
 - 🔔 Real-time mode (auto-analyze on board change detection)
 - 🗣️ Voice output for move suggestions
+- 📖 PGN export / game history
+- 🔎 Automatic board-region detection (Hough transform) instead of manual drag-select
+
+> This repo ships with a [Graphify](https://github.com/Graphify-Labs/graphify)
+> knowledge graph (`graphify-out/`, `.cursor/rules/graphify.mdc`) so AI coding
+> assistants can query the codebase structure instead of re-reading whole files —
+> handy if you're using Cursor/an AI agent to contribute.
 
 ---
 

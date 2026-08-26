@@ -1,0 +1,9 @@
+opencv-python>=4.9
+numpy>=1.26
+Pillow>=10.0
+python-chess>=1.10
+mss>=9.0
+
+# Optional — only needed for the "AI vision fallback" piece detector
+# (chess_vision_ai.vision_llm). Requires OPENAI_API_KEY to be set.
+# openai>=1.40
