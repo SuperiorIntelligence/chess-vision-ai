@@ -1,0 +1,28 @@
+# Downloaded engines & data (auto-fetched by the app on first run)
+engines/
+syzygy/
+lc0/
+piece_templates/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Testing / linting / packaging artifacts
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# Graphify: keep graph.json + GRAPH_REPORT.md (useful, small), skip the local AST cache
+graphify-out/cache/

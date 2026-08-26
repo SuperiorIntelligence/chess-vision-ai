@@ -1,0 +1,423 @@
+{
+  "communities": {
+    "0": [
+      "chess_vision_ai_config",
+      "chess_vision_ai_config_rationale_1",
+      "chess_vision_ai_download",
+      "chess_vision_ai_download_rationale_1",
+      "chess_vision_ai_engine_stack",
+      "chess_vision_ai_engine_stack_rationale_1",
+      "chess_vision_ai_init",
+      "chess_vision_ai_init_rationale_1",
+      "chess_vision_ai_logging_setup",
+      "chess_vision_ai_logging_setup_attach_ui_handler",
+      "chess_vision_ai_logging_setup_callbackhandler",
+      "chess_vision_ai_logging_setup_callbackhandler_init",
+      "chess_vision_ai_logging_setup_get_logger",
+      "chess_vision_ai_logging_setup_py_path",
+      "chess_vision_ai_logging_setup_rationale_1",
+      "chess_vision_ai_logging_setup_rationale_20",
+      "chess_vision_ai_logging_setup_rationale_54",
+      "chess_vision_ai_logging_setup_setup_logging",
+      "chess_vision_ai_phase",
+      "chess_vision_ai_phase_detect_phase",
+      "chess_vision_ai_phase_gamephase",
+      "chess_vision_ai_phase_rationale_1",
+      "chess_vision_ai_syzygy",
+      "chess_vision_ai_syzygy_rationale_1",
+      "chess_vision_ai_ui_analyzer_app",
+      "chess_vision_ai_ui_analyzer_app_main",
+      "chess_vision_ai_ui_analyzer_app_rationale_1",
+      "chess_vision_ai_ui_analyzer_app_rationale_578",
+      "chess_vision_ai_ui_download_dialog",
+      "chess_vision_ai_ui_download_dialog_rationale_1",
+      "logger",
+      "main",
+      "main_main",
+      "tests_test_phase",
+      "tests_test_phase_test_few_pieces_but_above_syzygy_threshold_is_endgame",
+      "tests_test_phase_test_kr_vs_k_is_tablebase",
+      "tests_test_phase_test_middlegame_between_thresholds",
+      "tests_test_phase_test_starting_position_is_opening"
+    ],
+    "1": [
+      "chess_vision_ai_ui_analyzer_app_chessanalyzerapp",
+      "chess_vision_ai_ui_analyzer_app_chessanalyzerapp_analyze",
+      "chess_vision_ai_ui_analyzer_app_chessanalyzerapp_build_ui",
+      "chess_vision_ai_ui_analyzer_app_chessanalyzerapp_capture_and_preview",
+      "chess_vision_ai_ui_analyzer_app_chessanalyzerapp_display_moves",
+      "chess_vision_ai_ui_analyzer_app_chessanalyzerapp_display_tactics",
+      "chess_vision_ai_ui_analyzer_app_chessanalyzerapp_draw_board",
+      "chess_vision_ai_ui_analyzer_app_chessanalyzerapp_draw_empty_board",
+      "chess_vision_ai_ui_analyzer_app_chessanalyzerapp_draw_eval_bar",
+      "chess_vision_ai_ui_analyzer_app_chessanalyzerapp_init",
+      "chess_vision_ai_ui_analyzer_app_chessanalyzerapp_init_engine_async",
+      "chess_vision_ai_ui_analyzer_app_chessanalyzerapp_is_flipped",
+      "chess_vision_ai_ui_analyzer_app_chessanalyzerapp_log",
+      "chess_vision_ai_ui_analyzer_app_chessanalyzerapp_on_close",
+      "chess_vision_ai_ui_analyzer_app_chessanalyzerapp_on_turn_change",
+      "chess_vision_ai_ui_analyzer_app_chessanalyzerapp_open_download_dialog",
+      "chess_vision_ai_ui_analyzer_app_chessanalyzerapp_recapture",
+      "chess_vision_ai_ui_analyzer_app_chessanalyzerapp_retry_engine",
+      "chess_vision_ai_ui_analyzer_app_chessanalyzerapp_run_selector",
+      "chess_vision_ai_ui_analyzer_app_chessanalyzerapp_select_region",
+      "chess_vision_ai_ui_analyzer_app_chessanalyzerapp_set_status",
+      "chess_vision_ai_ui_analyzer_app_chessanalyzerapp_sq_to_canvas",
+      "chess_vision_ai_ui_analyzer_app_py_tk"
+    ],
+    "2": [
+      "chess_vision_ai_capture",
+      "chess_vision_ai_capture_capture_region",
+      "chess_vision_ai_capture_py_ndarray",
+      "chess_vision_ai_capture_rationale_1",
+      "chess_vision_ai_capture_take_full_screenshot",
+      "chess_vision_ai_ui_trainer_app",
+      "chess_vision_ai_ui_trainer_app_py_tk",
+      "chess_vision_ai_ui_trainer_app_rationale_1",
+      "chess_vision_ai_ui_trainer_app_trainerapp",
+      "chess_vision_ai_ui_trainer_app_trainerapp_advance_step",
+      "chess_vision_ai_ui_trainer_app_trainerapp_build_ui",
+      "chess_vision_ai_ui_trainer_app_trainerapp_finish",
+      "chess_vision_ai_ui_trainer_app_trainerapp_init",
+      "chess_vision_ai_ui_trainer_app_trainerapp_on_click",
+      "chess_vision_ai_ui_trainer_app_trainerapp_refresh_wizard_ui",
+      "chess_vision_ai_ui_trainer_app_trainerapp_select_region",
+      "chess_vision_ai_ui_trainer_app_trainerapp_show_board",
+      "chess_vision_ai_ui_trainer_app_trainerapp_skip_step",
+      "identifying_chess_pieces",
+      "identifying_chess_pieces_main"
+    ],
+    "3": [
+      "chess_vision_ai_engine_stack_multienginestack",
+      "chess_vision_ai_engine_stack_multienginestack_analyse",
+      "chess_vision_ai_engine_stack_multienginestack_cache_get",
+      "chess_vision_ai_engine_stack_multienginestack_cache_info",
+      "chess_vision_ai_engine_stack_multienginestack_cache_put",
+      "chess_vision_ai_engine_stack_multienginestack_clear_cache",
+      "chess_vision_ai_engine_stack_multienginestack_close",
+      "chess_vision_ai_engine_stack_multienginestack_del",
+      "chess_vision_ai_engine_stack_multienginestack_has_lc0",
+      "chess_vision_ai_engine_stack_multienginestack_is_ready",
+      "chess_vision_ai_engine_stack_multienginestack_parse_sf",
+      "chess_vision_ai_engine_stack_multienginestack_status_text",
+      "chess_vision_ai_engine_stack_multienginestack_trivial",
+      "chess_vision_ai_engine_stack_py_board",
+      "chess_vision_ai_models_analysisresult",
+      "chess_vision_ai_models_moveinfo",
+      "chess_vision_ai_models_moveinfo_as_dict",
+      "chess_vision_ai_models_rationale_14",
+      "chess_vision_ai_models_rationale_24",
+      "chess_vision_ai_models_rationale_33"
+    ],
+    "4": [
+      "chess_vision_ai_download_downloaderror",
+      "chess_vision_ai_download_downloadmanager",
+      "chess_vision_ai_download_downloadmanager_cancel",
+      "chess_vision_ai_download_downloadmanager_decompress_gz",
+      "chess_vision_ai_download_downloadmanager_download_all",
+      "chess_vision_ai_download_downloadmanager_download_lc0",
+      "chess_vision_ai_download_downloadmanager_download_maia_network",
+      "chess_vision_ai_download_downloadmanager_download_stockfish18",
+      "chess_vision_ai_download_downloadmanager_download_syzygy",
+      "chess_vision_ai_download_downloadmanager_extract_tar",
+      "chess_vision_ai_download_downloadmanager_extract_zip",
+      "chess_vision_ai_download_downloadmanager_fetch",
+      "chess_vision_ai_download_downloadmanager_init",
+      "chess_vision_ai_download_downloadmanager_is_valid_binary",
+      "chess_vision_ai_download_py_path",
+      "exception",
+      "logcb",
+      "progresscb"
+    ],
+    "5": [
+      "chess_vision_ai_engine_process",
+      "chess_vision_ai_engine_process_find_lc0",
+      "chess_vision_ai_engine_process_find_stockfish",
+      "chess_vision_ai_engine_process_py_board",
+      "chess_vision_ai_engine_process_rationale_1",
+      "chess_vision_ai_engine_process_rationale_74",
+      "chess_vision_ai_engine_process_singleengine",
+      "chess_vision_ai_engine_process_singleengine_analyse",
+      "chess_vision_ai_engine_process_singleengine_close",
+      "chess_vision_ai_engine_process_singleengine_del",
+      "chess_vision_ai_engine_process_singleengine_init",
+      "chess_vision_ai_engine_process_singleengine_open",
+      "chess_vision_ai_engine_process_test_engine",
+      "chess_vision_ai_engine_stack_multienginestack_init",
+      "chess_vision_ai_logging_setup_callbackhandler_emit",
+      "limit",
+      "logrecord",
+      "runtimeerror"
+    ],
+    "6": [
+      "chess_vision_ai_models_detectionresult",
+      "chess_vision_ai_models_rationale_60",
+      "chess_vision_ai_templates",
+      "chess_vision_ai_templates_generate_synthetic_templates",
+      "chess_vision_ai_templates_load_templates",
+      "chess_vision_ai_templates_rationale_1",
+      "chess_vision_ai_templates_template_path",
+      "chess_vision_ai_vision_detection",
+      "chess_vision_ai_vision_detection_boarddetector",
+      "chess_vision_ai_vision_detection_boarddetector_detect",
+      "chess_vision_ai_vision_detection_boarddetector_detect_with_confidence",
+      "chess_vision_ai_vision_detection_boarddetector_identify",
+      "chess_vision_ai_vision_detection_boarddetector_init",
+      "chess_vision_ai_vision_detection_boarddetector_ncc",
+      "chess_vision_ai_vision_detection_boarddetector_split_and_id",
+      "chess_vision_ai_vision_detection_py_ndarray",
+      "chess_vision_ai_vision_detection_rationale_1",
+      "chess_vision_ai_vision_detection_rationale_29"
+    ],
+    "7": [
+      "chess_vision_ai_fen_utils",
+      "chess_vision_ai_fen_utils_board_map_to_fen",
+      "chess_vision_ai_fen_utils_infer_castling",
+      "chess_vision_ai_fen_utils_rationale_1",
+      "chess_vision_ai_fen_utils_rationale_13",
+      "chess_vision_ai_fen_utils_rationale_45",
+      "chess_vision_ai_fen_utils_rationale_67",
+      "chess_vision_ai_fen_utils_sanitize_board_map",
+      "tests_test_fen_utils",
+      "tests_test_fen_utils_test_board_map_to_fen_starting_position_is_valid",
+      "tests_test_fen_utils_test_castling_rights_dash_when_king_moved",
+      "tests_test_fen_utils_test_castling_rights_full_when_king_and_rooks_home",
+      "tests_test_fen_utils_test_castling_rights_partial_when_one_rook_moved",
+      "tests_test_fen_utils_test_empty_board_produces_all_dashes_rank",
+      "tests_test_fen_utils_test_sanitize_adds_missing_kings",
+      "tests_test_fen_utils_test_sanitize_removes_extra_pieces_over_the_physical_maximum"
+    ],
+    "8": [
+      "chess_vision_ai_models",
+      "chess_vision_ai_models_rationale_1",
+      "chess_vision_ai_models_tacticinfo",
+      "chess_vision_ai_models_tacticresult",
+      "chess_vision_ai_tactics",
+      "chess_vision_ai_tactics_py_board",
+      "chess_vision_ai_tactics_rationale_1",
+      "chess_vision_ai_tactics_rationale_23",
+      "chess_vision_ai_tactics_tacticalanalyzer",
+      "chess_vision_ai_tactics_tacticalanalyzer_analyse_move",
+      "chess_vision_ai_tactics_tacticalanalyzer_discovered_attack",
+      "chess_vision_ai_tactics_tacticalanalyzer_fork",
+      "chess_vision_ai_tactics_tacticalanalyzer_pin",
+      "chess_vision_ai_tactics_tacticalanalyzer_skewer",
+      "move"
+    ],
+    "9": [
+      "chess_vision_ai_vision_llm",
+      "chess_vision_ai_vision_llm_encode_image",
+      "chess_vision_ai_vision_llm_is_available",
+      "chess_vision_ai_vision_llm_orientation_hint",
+      "chess_vision_ai_vision_llm_parse_response",
+      "chess_vision_ai_vision_llm_py_ndarray",
+      "chess_vision_ai_vision_llm_rationale_1",
+      "chess_vision_ai_vision_llm_rationale_51",
+      "chess_vision_ai_vision_llm_rationale_88",
+      "chess_vision_ai_vision_llm_visionllmdetector",
+      "chess_vision_ai_vision_llm_visionllmdetector_detect",
+      "chess_vision_ai_vision_llm_visionllmdetector_init",
+      "chess_vision_ai_vision_llm_visionllmerror"
+    ],
+    "10": [
+      "tests_test_tactics",
+      "tests_test_tactics_tactic_names",
+      "tests_test_tactics_test_checkmate_detected",
+      "tests_test_tactics_test_discovered_attack_when_blocker_moves_away",
+      "tests_test_tactics_test_knight_fork_on_king_and_rook",
+      "tests_test_tactics_test_material_gain_on_favorable_capture",
+      "tests_test_tactics_test_promotion_detected",
+      "tests_test_tactics_test_quiet_move_without_tactics_has_no_tactic_entries",
+      "tests_test_tactics_test_rook_pin_against_king",
+      "tests_test_tactics_test_rook_skewer_through_queen_to_rook"
+    ],
+    "11": [
+      "chess_vision_ai_ui_download_dialog_downloaddialog",
+      "chess_vision_ai_ui_download_dialog_downloaddialog_do_cancel",
+      "chess_vision_ai_ui_download_dialog_downloaddialog_done",
+      "chess_vision_ai_ui_download_dialog_downloaddialog_init",
+      "chess_vision_ai_ui_download_dialog_downloaddialog_on_log",
+      "chess_vision_ai_ui_download_dialog_downloaddialog_on_progress",
+      "chess_vision_ai_ui_download_dialog_downloaddialog_worker",
+      "misc"
+    ],
+    "12": [
+      "chess_vision_ai_syzygy_py_path",
+      "chess_vision_ai_syzygy_syzygymanager",
+      "chess_vision_ai_syzygy_syzygymanager_file_count",
+      "chess_vision_ai_syzygy_syzygymanager_init",
+      "chess_vision_ai_syzygy_syzygymanager_is_available",
+      "chess_vision_ai_syzygy_syzygymanager_max_pieces",
+      "chess_vision_ai_syzygy_syzygymanager_path_str"
+    ],
+    "13": [
+      "chess_vision_ai_ui_init",
+      "chess_vision_ai_ui_init_rationale_1"
+    ],
+    "14": [
+      "pkg_chess_vision_ai"
+    ],
+    "15": [
+      "tests_init"
+    ]
+  },
+  "cohesion": {
+    "0": 0.10668563300142248,
+    "1": 0.17391304347826086,
+    "2": 0.1736842105263158,
+    "3": 0.15789473684210525,
+    "4": 0.24836601307189543,
+    "5": 0.16339869281045752,
+    "6": 0.20261437908496732,
+    "7": 0.21666666666666667,
+    "8": 0.3047619047619048,
+    "9": 0.2692307692307692,
+    "10": 0.35555555555555557,
+    "11": 0.2857142857142857,
+    "12": 0.2857142857142857,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0
+  },
+  "gods": [
+    {
+      "id": "chess_vision_ai_ui_analyzer_app_chessanalyzerapp",
+      "label": "ChessAnalyzerApp",
+      "degree": 26
+    },
+    {
+      "id": "chess_vision_ai_engine_stack_multienginestack",
+      "label": "MultiEngineStack",
+      "degree": 21
+    },
+    {
+      "id": "chess_vision_ai_download_downloadmanager",
+      "label": "DownloadManager",
+      "degree": 15
+    },
+    {
+      "id": "chess_vision_ai_ui_trainer_app_trainerapp",
+      "label": "TrainerApp",
+      "degree": 12
+    },
+    {
+      "id": "chess_vision_ai_syzygy_syzygymanager",
+      "label": "SyzygyManager",
+      "degree": 11
+    },
+    {
+      "id": "chess_vision_ai_tactics_tacticalanalyzer",
+      "label": "TacticalAnalyzer",
+      "degree": 11
+    },
+    {
+      "id": "chess_vision_ai_ui_download_dialog_downloaddialog",
+      "label": "DownloadDialog",
+      "degree": 10
+    },
+    {
+      "id": "chess_vision_ai_engine_process_singleengine",
+      "label": "SingleEngine",
+      "degree": 10
+    },
+    {
+      "id": "chess_vision_ai_vision_detection_boarddetector",
+      "label": "BoardDetector",
+      "degree": 10
+    },
+    {
+      "id": "chess_vision_ai_phase_gamephase",
+      "label": "GamePhase",
+      "degree": 9
+    }
+  ],
+  "surprises": [
+    {
+      "source": "test_few_pieces_but_above_syzygy_threshold_is_endgame()",
+      "target": "GamePhase",
+      "source_files": [
+        "tests/test_phase.py",
+        "chess_vision_ai/phase.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    },
+    {
+      "source": "test_kr_vs_k_is_tablebase()",
+      "target": "GamePhase",
+      "source_files": [
+        "tests/test_phase.py",
+        "chess_vision_ai/phase.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    },
+    {
+      "source": "test_middlegame_between_thresholds()",
+      "target": "GamePhase",
+      "source_files": [
+        "tests/test_phase.py",
+        "chess_vision_ai/phase.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    },
+    {
+      "source": "test_starting_position_is_opening()",
+      "target": "GamePhase",
+      "source_files": [
+        "tests/test_phase.py",
+        "chess_vision_ai/phase.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    },
+    {
+      "source": "main()",
+      "target": "ChessAnalyzerApp",
+      "source_files": [
+        "main.py",
+        "chess_vision_ai/ui/analyzer_app.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; bridges separate communities"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `ChessAnalyzerApp` connect `Community 1` to `Community 0`, `Community 11`?",
+      "why": "High betweenness centrality (0.144) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `MultiEngineStack` connect `Community 3` to `Community 0`, `Community 1`, `Community 12`, `Community 5`?",
+      "why": "High betweenness centrality (0.136) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `DownloadManager` connect `Community 4` to `Community 0`, `Community 11`?",
+      "why": "High betweenness centrality (0.123) - this node is a cross-community bridge."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 5 inferred relationships involving `MultiEngineStack` (e.g. with `SingleEngine` and `AnalysisResult`) actually correct?",
+      "why": "`MultiEngineStack` has 5 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `chess-vision-ai` to the rest of the system?",
+      "why": "1 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 0` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.10668563300142248 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

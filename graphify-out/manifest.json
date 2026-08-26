@@ -1,0 +1,158 @@
+{
+  "Identifying_chess_pieces.py": {
+    "mtime": 1787768330.103893,
+    "seen": 1787768926.6884694,
+    "ast_hash": "b21ed1620350f19d86090925aa3ab63a",
+    "semantic_hash": "b21ed1620350f19d86090925aa3ab63a"
+  },
+  "chess_vision_ai/__init__.py": {
+    "mtime": 1787767947.6271334,
+    "seen": 1787768926.6884694,
+    "ast_hash": "5216f8a9a87c6b1146a5e392383d1eac",
+    "semantic_hash": "5216f8a9a87c6b1146a5e392383d1eac"
+  },
+  "chess_vision_ai/capture.py": {
+    "mtime": 1787768120.692859,
+    "seen": 1787768926.6884694,
+    "ast_hash": "0c7fdff6fa2545af2abc367da16fc3de",
+    "semantic_hash": "0c7fdff6fa2545af2abc367da16fc3de"
+  },
+  "chess_vision_ai/config.py": {
+    "mtime": 1787767964.8544803,
+    "seen": 1787768926.6884694,
+    "ast_hash": "a0183e547ed386c02b1be32237e3db3a",
+    "semantic_hash": "a0183e547ed386c02b1be32237e3db3a"
+  },
+  "chess_vision_ai/download.py": {
+    "mtime": 1787768044.6122582,
+    "seen": 1787768926.6884694,
+    "ast_hash": "1d294271e59a672b1d0fd8b47a0ba43c",
+    "semantic_hash": "1d294271e59a672b1d0fd8b47a0ba43c"
+  },
+  "chess_vision_ai/engine_process.py": {
+    "mtime": 1787768060.3498788,
+    "seen": 1787768926.6884694,
+    "ast_hash": "1eb9d7e2fb5a48628f0a37fbf36cfddc",
+    "semantic_hash": "1eb9d7e2fb5a48628f0a37fbf36cfddc"
+  },
+  "chess_vision_ai/engine_stack.py": {
+    "mtime": 1787768096.7252867,
+    "seen": 1787768926.6884694,
+    "ast_hash": "7bb1512cede103726d3b871b4e6faaca",
+    "semantic_hash": "7bb1512cede103726d3b871b4e6faaca"
+  },
+  "chess_vision_ai/fen_utils.py": {
+    "mtime": 1787767995.942263,
+    "seen": 1787768926.6884694,
+    "ast_hash": "e7a2f0b35f8a29dd08cfaca7e8297bbc",
+    "semantic_hash": "e7a2f0b35f8a29dd08cfaca7e8297bbc"
+  },
+  "chess_vision_ai/logging_setup.py": {
+    "mtime": 1787767984.1858978,
+    "seen": 1787768926.6884694,
+    "ast_hash": "f29568ca0f7e2ba972ddbb2372b77879",
+    "semantic_hash": "f29568ca0f7e2ba972ddbb2372b77879"
+  },
+  "chess_vision_ai/models.py": {
+    "mtime": 1787767977.3819928,
+    "seen": 1787768926.6884694,
+    "ast_hash": "4888f2bda8a893f93f3fb13a523f54a8",
+    "semantic_hash": "4888f2bda8a893f93f3fb13a523f54a8"
+  },
+  "chess_vision_ai/phase.py": {
+    "mtime": 1787767999.1452572,
+    "seen": 1787768926.6884694,
+    "ast_hash": "e8dc0c9a4756424e0baab489c0b84deb",
+    "semantic_hash": "e8dc0c9a4756424e0baab489c0b84deb"
+  },
+  "chess_vision_ai/syzygy.py": {
+    "mtime": 1787768046.1057737,
+    "seen": 1787768926.6884694,
+    "ast_hash": "5d38bc67ef8d8ec6d7a6c84b77765eba",
+    "semantic_hash": "5d38bc67ef8d8ec6d7a6c84b77765eba"
+  },
+  "chess_vision_ai/tactics.py": {
+    "mtime": 1787768019.5315623,
+    "seen": 1787768926.6884694,
+    "ast_hash": "42a69279c7d5a8d1bc95f92bd58d7b14",
+    "semantic_hash": "42a69279c7d5a8d1bc95f92bd58d7b14"
+  },
+  "chess_vision_ai/templates.py": {
+    "mtime": 1787768119.3462713,
+    "seen": 1787768926.6884694,
+    "ast_hash": "36216953e8f24ceb8d9d40b97f54ab46",
+    "semantic_hash": "36216953e8f24ceb8d9d40b97f54ab46"
+  },
+  "chess_vision_ai/ui/__init__.py": {
+    "mtime": 1787768166.703259,
+    "seen": 1787768926.6884694,
+    "ast_hash": "50b455b3af389a72cc0f4055ab6fba02",
+    "semantic_hash": "50b455b3af389a72cc0f4055ab6fba02"
+  },
+  "chess_vision_ai/ui/analyzer_app.py": {
+    "mtime": 1787768718.3382938,
+    "seen": 1787768926.6884694,
+    "ast_hash": "5048f7a9add74961743fb5f41fdaf79c",
+    "semantic_hash": "5048f7a9add74961743fb5f41fdaf79c"
+  },
+  "chess_vision_ai/ui/download_dialog.py": {
+    "mtime": 1787768178.4493408,
+    "seen": 1787768926.6884694,
+    "ast_hash": "63627364ff10e212f1a999b512170859",
+    "semantic_hash": "63627364ff10e212f1a999b512170859"
+  },
+  "chess_vision_ai/ui/trainer_app.py": {
+    "mtime": 1787768319.4364114,
+    "seen": 1787768926.6884694,
+    "ast_hash": "9787f0f2f512072523e0a9dcdc809712",
+    "semantic_hash": "9787f0f2f512072523e0a9dcdc809712"
+  },
+  "chess_vision_ai/vision_detection.py": {
+    "mtime": 1787768718.3372936,
+    "seen": 1787768926.6884694,
+    "ast_hash": "4e912e65c0edac24ed91b22aac1e7a3f",
+    "semantic_hash": "4e912e65c0edac24ed91b22aac1e7a3f"
+  },
+  "chess_vision_ai/vision_llm.py": {
+    "mtime": 1787768161.7428963,
+    "seen": 1787768926.6884694,
+    "ast_hash": "78180afda56e42a4c954382a54d4e4fb",
+    "semantic_hash": "78180afda56e42a4c954382a54d4e4fb"
+  },
+  "main.py": {
+    "mtime": 1787768327.6810448,
+    "seen": 1787768926.6884694,
+    "ast_hash": "d1d5805e79f897c8878559d2b5e63693",
+    "semantic_hash": "d1d5805e79f897c8878559d2b5e63693"
+  },
+  "pyproject.toml": {
+    "mtime": 1787768714.4079568,
+    "seen": 1787768926.6884694,
+    "ast_hash": "ea2da66d5ec5a5f03babbfa457dd01de",
+    "semantic_hash": "ea2da66d5ec5a5f03babbfa457dd01de"
+  },
+  "tests/__init__.py": {
+    "mtime": 1787768349.9357853,
+    "seen": 1787768926.6884694,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "tests/test_fen_utils.py": {
+    "mtime": 1787768358.3361225,
+    "seen": 1787768926.6884694,
+    "ast_hash": "13fe8ef5083ede1d98ee6afef6a74278",
+    "semantic_hash": "13fe8ef5083ede1d98ee6afef6a74278"
+  },
+  "tests/test_phase.py": {
+    "mtime": 1787768609.7293997,
+    "seen": 1787768926.6884694,
+    "ast_hash": "ea2727268de5945ef6515d526a898b05",
+    "semantic_hash": "ea2727268de5945ef6515d526a898b05"
+  },
+  "tests/test_tactics.py": {
+    "mtime": 1787768488.7413752,
+    "seen": 1787768926.6884694,
+    "ast_hash": "8953932728c792919bd0444092cf6add",
+    "semantic_hash": "8953932728c792919bd0444092cf6add"
+  }
+}
